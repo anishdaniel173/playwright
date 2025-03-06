@@ -33,5 +33,9 @@ test('multitab',async()=>{
     let tab2 = await contextA.newPage();
     await tab2.goto('https://www.instagram.com/');
 
+    let contextB = await browser.newContext();
+    let tabB1 = await contextB.newPage();
+    await tabB1.goto('https://www.facebook.com/')
+
 
 })
