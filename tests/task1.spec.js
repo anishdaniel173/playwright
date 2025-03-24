@@ -40,6 +40,7 @@ test ('login myntra',async({page})=>{
     await page.goto("https://www.myntra.com/");
     await page.locator("//input[@placeholder='Search for products, brands and more']").fill("men shoe");
     await page.click ("//span[@class='myntraweb-sprite desktop-iconSearch sprites-search']");
-    
+
     await page.waitForTimeout(2000)
 })
+
